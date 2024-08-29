@@ -2,12 +2,11 @@ import streamlit as st
 import subprocess
 import sys
 import corpora
-subprocess.run([f"{sys.executable}",'-m', "corpora.py"])
 from textblob import TextBlob
 from googletrans import Translator
 from textblob import Word
 
-#subprocess.run([f"{sys.executable}", "corpora.py"])
+
 
 
 st.title('Análisis de Sentimiento')
