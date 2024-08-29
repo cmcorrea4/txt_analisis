@@ -1,4 +1,5 @@
 import streamlit as st
+import corpora
 from textblob import TextBlob
 from googletrans import Translator
 from textblob import Word
