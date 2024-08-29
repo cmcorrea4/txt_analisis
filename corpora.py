@@ -4,7 +4,7 @@ import subprocess
 def descargar_corpora():
     try:
         # Ejecutar el comando "python -m textblob.download_corpora"
-        subprocess.run(["python", "-m", "textblob.download_corpora"], check=True)
+        subprocess.run(["python3", "-m", "textblob.download_corpora"], check=True)
         print("Corpora descargados correctamente.")
     except subprocess.CalledProcessError:
         print("Error al descargar los corpora.")
