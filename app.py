@@ -10,12 +10,11 @@ st.subheader("Por favor escribe en el campo de texto la frase que deseas analiza
 
 translator = Translator()
 
-with st.expander('Analizar texto'):
-    text = st.text_area('Escribe por favor: ')
-    if text:
 
-        translation = translator.translate(text, src="es", dest="en")
-        trans_text = translation.text
+text = st.text_area('Escribe por favor: ')
+if text:
+   translation = translator.translate(text, src="es", dest="en")
+   trans_text = translation.text
         
 if trans_text:
 
