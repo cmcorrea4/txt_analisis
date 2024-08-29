@@ -3,6 +3,10 @@ import corpora
 from textblob import TextBlob
 from googletrans import Translator
 from textblob import Word
+import subprocess
+import sys
+
+subprocess.run([f"{sys.executable}", "corpora.py"])
 
 st.title('Análisis de Sentimiento')
 #image = Image.open('emoticones.jpg')
