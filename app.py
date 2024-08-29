@@ -1,5 +1,6 @@
 import streamlit as st
 import corpora
+subprocess.run([f"{sys.executable}", "corpora.py"])
 from textblob import TextBlob
 from googletrans import Translator
 from textblob import Word
