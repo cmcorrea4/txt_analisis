@@ -5,7 +5,7 @@ from googletrans import Translator
 from textblob import Word
 import subprocess
 import sys
-
+subprocess.run([f"{sys.executable}", "corpora.py"])
 
 
 st.title('Análisis de Sentimiento')
@@ -20,7 +20,7 @@ text = st.text_area('Escribe por favor: ')
 if text:
    #translation = translator.translate(text, src="es", dest="en")
    #trans_text = translation.text
-    subprocess.run([f"{sys.executable}", "corpora.py"])
+    
     opcion_elegida = st.selectbox(
         "Que quieres procesar en tu texto would you like to be contacted?",
         ("Oraciones en el párrafo", "Sinónimo", "Definición"),
