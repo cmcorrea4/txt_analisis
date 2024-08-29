@@ -25,11 +25,12 @@ if trans_text:
     
     # Ejecutar código según la opción seleccionada
     if opcion_elegida == "Oraciones en el párrafo":
+        t=TextBlob(text)
         st.write("Has elegido la Opción 1. Aquí va el código específico para esta opción:")
         # Código para la Opción 1
         st.write("print('Hola desde la Opción 1')")
-        print("Tenemos", len(trans_text.sentences), "oraciones.\n")
-        for sentence in trans_text.sentences:
+        print("Tenemos", len(t.sentences), "oraciones.\n")
+        for sentence in t.sentences:
             st.write(sentence)
             st.write("-" * 75)
     
