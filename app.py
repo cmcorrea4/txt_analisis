@@ -29,12 +29,17 @@ if trans_text:
         st.write("Has elegido la Opción 1. Aquí va el código específico para esta opción:")
         # Código para la Opción 1
         st.write("print('Hola desde la Opción 1')")
+        print("Tenemos", len(trans_text.sentences), "oraciones.\n")
+        for sentence in trans_text.sentences:
+            st.write(sentence)
+            st.write("-" * 75)
+    
     elif opcion_elegida == "Sinónimo":
         st.write("Has elegido la Opción 2. Aquí va el código específico para esta opción:")
         # Código para la Opción 2
-        st.write("print('Hola desde la Opción 2')")
+        st.write("Hola desde la Opción 2")
     else:
         st.write("Has elegido la Opción 3. Aquí va el código específico para esta opción:")
         # Código para la Opción 3
-        st.write("print('Hola desde la Opción 3')")
+        st.write("Hola desde la Opción")
 
