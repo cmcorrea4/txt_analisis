@@ -31,11 +31,11 @@ if text:
          st.write(sentence)
          st.write("-" * 75)
    
-     elif opcion_elegida == "Sinónimo":
+    elif opcion_elegida == "Sinónimo":
        st.write("Has elegido la Opción 2. Aquí va el código específico para esta opción:")
        # Código para la Opción 2
        st.write("Hola desde la Opción 2")
-     else:
+    else:
        st.write("Has elegido la Opción 3. Aquí va el código específico para esta opción:")
        # Código para la Opción 3
        st.write("Hola desde la Opción")
