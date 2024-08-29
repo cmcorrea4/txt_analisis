@@ -16,23 +16,25 @@ with st.expander('Analizar texto'):
 
         translation = translator.translate(text, src="es", dest="en")
         trans_text = translation.text
+        
+if trans_text:
 
-option = st.selectbox(
-    "Que quieres procesar en tu texto would you like to be contacted?",
-    ("Oraciones en el párrafo", "Sinónimo", "Definición"),
-)
-
-# Ejecutar código según la opción seleccionada
-if opcion_elegida == "Oraciones en el párrafo":
-    st.write("Has elegido la Opción 1. Aquí va el código específico para esta opción:")
-    # Código para la Opción 1
-    st.write("print('Hola desde la Opción 1')")
-elif opcion_elegida == "Sinónimo":
-    st.write("Has elegido la Opción 2. Aquí va el código específico para esta opción:")
-    # Código para la Opción 2
-    st.write("print('Hola desde la Opción 2')")
-else:
-    st.write("Has elegido la Opción 3. Aquí va el código específico para esta opción:")
-    # Código para la Opción 3
-    st.write("print('Hola desde la Opción 3')")
+    option = st.selectbox(
+        "Que quieres procesar en tu texto would you like to be contacted?",
+        ("Oraciones en el párrafo", "Sinónimo", "Definición"),
+    )
+    
+    # Ejecutar código según la opción seleccionada
+    if opcion_elegida == "Oraciones en el párrafo":
+        st.write("Has elegido la Opción 1. Aquí va el código específico para esta opción:")
+        # Código para la Opción 1
+        st.write("print('Hola desde la Opción 1')")
+    elif opcion_elegida == "Sinónimo":
+        st.write("Has elegido la Opción 2. Aquí va el código específico para esta opción:")
+        # Código para la Opción 2
+        st.write("print('Hola desde la Opción 2')")
+    else:
+        st.write("Has elegido la Opción 3. Aquí va el código específico para esta opción:")
+        # Código para la Opción 3
+        st.write("print('Hola desde la Opción 3')")
 
