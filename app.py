@@ -12,7 +12,7 @@ translator = Translator()
 
 
 text = st.text_area('Escribe por favor: ')
-if text:
+if text is None:
    #translation = translator.translate(text, src="es", dest="en")
    #trans_text = translation.text
    opcion_elegida = st.selectbox(
