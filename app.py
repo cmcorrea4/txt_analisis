@@ -16,7 +16,7 @@ if text:
    translation = translator.translate(text, src="es", dest="en")
    trans_text = translation.text
         
-if trans_text:
+
 
     opcion_elegida = st.selectbox(
         "Que quieres procesar en tu texto would you like to be contacted?",
