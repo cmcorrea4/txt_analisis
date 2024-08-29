@@ -13,8 +13,8 @@ translator = Translator()
 
 text = st.text_area('Escribe por favor: ')
 if text:
-   translation = translator.translate(text, src="es", dest="en")
-   trans_text = translation.text
+   #translation = translator.translate(text, src="es", dest="en")
+   #trans_text = translation.text
    opcion_elegida = st.selectbox(
         "Que quieres procesar en tu texto would you like to be contacted?",
         ("Oraciones en el párrafo", "Sinónimo", "Definición"),
